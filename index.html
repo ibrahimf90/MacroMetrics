@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MacroMetrics - Fitness & Macro Calculator</title>
+    <meta
+      name="description"
+      content="Calculate your BMI, daily calorie target, and macro split based on your goals."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1><i class="fa-solid fa-bolt"></i> MacroMetrics</h1>
+        <p>Optimize your nutrition for your goals.</p>
+      </header>
+
+      <main>
+        <section class="card input-section">
+          <form id="calculator-form">
+            <div class="form-group sex-selection">
+              <label>Assigned Sex at Birth</label>
+              <div class="radio-group">
+                <input type="radio" id="male" name="sex" value="male" checked />
+                <label for="male"><i class="fa-solid fa-mars"></i> Male</label>
+
+                <input type="radio" id="female" name="sex" value="female" />
+                <label for="female"
+                  ><i class="fa-solid fa-venus"></i> Female</label
+                >
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  id="age"
+                  min="15"
+                  max="100"
+                  value="25"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input
+                  type="number"
+                  id="weight"
+                  min="30"
+                  max="250"
+                  value="70"
+                  required
+                  step="0.1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input
+                  type="number"
+                  id="height"
+                  min="100"
+                  max="250"
+                  value="170"
+                  required
+                  step="0.1"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="activity">Activity Level</label>
+              <select id="activity" required>
+                <option value="1.2">Sedentary (Little to no exercise)</option>
+                <option value="1.375">
+                  Lightly Active (Training 1-3 days/week)
+                </option>
+                <option value="1.55" selected>
+                  Moderately Active (Training 3-5 days/week)
+                </option>
+                <option value="1.725">
+                  Very Active (Training 6-7 days/week)
+                </option>
+                <option value="1.9">
+                  Extra Active (Intense training / physical job)
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="goal">Your Goal</label>
+              <select id="goal" required>
+                <option value="lose">Lose Fat</option>
+                <option value="maintain" selected>Maintain Weight</option>
+                <option value="gain">Gain Muscle</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              Calculate Macros <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </section>
+
+        <section class="card results-section hidden" id="results">
+          <h2>Your Results</h2>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <h3><i class="fa-solid fa-fire"></i> Target Calories</h3>
+              <div class="value" id="result-calories">0</div>
+              <div class="unit">kcal/day</div>
+            </div>
+            <div class="metric-card">
+              <h3><i class="fa-solid fa-heart-pulse"></i> BMI</h3>
+              <div class="value" id="result-bmi">0</div>
+              <div class="unit" id="result-bmi-category">Normal</div>
+            </div>
+          </div>
+
+          <h3 class="macros-title">Daily Macronutrients</h3>
+          <div class="macros-container">
+            <div class="macro-box protein">
+              <div class="macro-header">
+                Protein <span class="perc" id="perc-protein">30%</span>
+              </div>
+              <div class="macro-value" id="result-protein">0g</div>
+              <div class="progress-bar">
+                <div class="fill" id="fill-protein"></div>
+              </div>
+            </div>
+
+            <div class="macro-box carbs">
+              <div class="macro-header">
+                Carbs <span class="perc" id="perc-carbs">40%</span>
+              </div>
+              <div class="macro-value" id="result-carbs">0g</div>
+              <div class="progress-bar">
+                <div class="fill" id="fill-carbs"></div>
+              </div>
+            </div>
+
+            <div class="macro-box fat">
+              <div class="macro-header">
+                Fat <span class="perc" id="perc-fat">30%</span>
+              </div>
+              <div class="macro-value" id="result-fat">0g</div>
+              <div class="progress-bar">
+                <div class="fill" id="fill-fat"></div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn-secondary" id="recalculate-btn">
+            <i class="fa-solid fa-rotate-left"></i> Recalculate
+          </button>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Designed and Developed by Ibrahim Fayyad &copy; 2020. All rights
+          reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
