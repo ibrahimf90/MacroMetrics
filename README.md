@@ -17,4 +17,14 @@ This project relies purely on vanilla web technologies to keep it lighting fast 
 
 - **HTML5**: Semantic markup and form structuring.
 - **CSS**: Custom properties (variables), Flexbox/Grid routing, animated keyframes, and backdrop-filter glass implementations. No external UI frameworks like Bootstrap or Tailwind were used.
-- **JavaScript**: DOM manipulation, calculation logic, and event handling without the overhead of heavy frameworks like React or Vue. 
+- **JavaScript**: DOM manipulation, calculation logic, and event handling without the overhead of heavy frameworks like React or Vue.
+
+  ## 👨‍💻 Author
+
+Ibrahim Fayyad
+📍 Germany
+💼 Full Stack Developer
+
+## 🔗 GitHub
+
+https://github.com/ibrahimf90
