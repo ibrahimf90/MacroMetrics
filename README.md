@@ -1,7 +1,7 @@
 # MacroMetrics
 A modern, visually stunning web application that allows users to accurately calculate their Body Mass Index (BMI), predict their Total Daily Energy Expenditure (TDEE), and automatically generate customized daily macronutrient goals based on their physical metrics and fitness goals.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 This project relies purely on vanilla web technologies to keep it lighting fast and entirely standalone.
 
@@ -9,7 +9,7 @@ This project relies purely on vanilla web technologies to keep it lighting fast 
 - **CSS**: Custom properties (variables), Flexbox/Grid routing, animated keyframes, and backdrop-filter glass implementations. No external UI frameworks like Bootstrap or Tailwind were used.
 - **JavaScript**: DOM manipulation, calculation logic, and event handling without the overhead of heavy frameworks like React or Vue.
 
-## ✨ Features
+## Features
 - **Precise Calculations**: Utilizes the highly accurate to calculate Basal Metabolic Rate (BMR) and standardizes TDEE multipliers.
 - **Goal-Oriented Macro Splits**: Automatically scales caloric intake and macronutrient profiles depending on the selected goal:
   - **Lose Fat**: 500 kcal deficit, high protein structure to maintain muscle.
@@ -20,12 +20,12 @@ This project relies purely on vanilla web technologies to keep it lighting fast 
 - **Fully Responsive**: Designed to look and function perfectly on both desktop monitors and mobile devices.
 
 
-  ## 👨‍💻 Author
+  ## Author
 
 Ibrahim Fayyad
 📍 Germany
 💼 Full Stack Developer
 
-## 🔗 GitHub
+## GitHub
 
 https://github.com/ibrahimf90
