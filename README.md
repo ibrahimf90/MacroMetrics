@@ -20,7 +20,7 @@ This project relies purely on vanilla web technologies to keep it lighting fast 
 - **JavaScript**: DOM manipulation, calculation logic, and event handling without the overhead of heavy frameworks like React or Vue.
 
 
-  ## Author
+## Author
 
 Ibrahim Fayyad
 📍 Germany
